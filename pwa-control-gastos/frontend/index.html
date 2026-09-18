@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Gastos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <main>
+        <h1>Control de Gastos</h1>
+
+        <section>
+            <h2>Registrar gasto</h2>
+            <form id="form-gasto">
+                <label for="descripcion">Descripción</label>
+                <input 
+                    type="text"
+                    id="descripcion"
+                    name="descripcion"
+                    required
+                >
+                
+                <label for="cantidad">Cantidad</label>
+                <input 
+                    type="number"
+                    id="cantidad"
+                    name="cantidad"
+                    required
+                >
+
+                <label for="categoria">Categoría</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="">Selecciona una categoría</option>
+                    <option value="Alimentación">Alimentación</option>
+                    <option value="Transporte">Transporte</option>
+                    <option value="Entretenimiento">Entretenmiento</option>
+                    <option value="Otros">Otros</option>
+                
+                </select>
+
+                <label for="fecha">Fecha</label>
+                <input 
+                    type="date"
+                    id="fecha"
+                    name="fecha"
+                    required
+                    >
+                
+                    <button type="submit">Agregar Gasto</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Gastos registrados</h2>
+
+            <ul id="lista-gastos"></ul>
+            <p>
+                Total: <strong id="total-gastos">$0.00</strong>
+            </p>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
