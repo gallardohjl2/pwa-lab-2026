@@ -15,4 +15,6 @@ ARRAY TEMPORAL
 LOCALHOST
 ```
 
-
+git remote add origin https://github.com/gallardohjl2/pwa-septiembre-2026.git
+git branch -M main
+git push -u origin main
