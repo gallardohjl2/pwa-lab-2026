@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+main {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 10px;
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+#lista-gastos {
+    padding-left: 20px;
+}
+
+#total-gastos {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 480px) {
+    main {
+        width: 95%;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
